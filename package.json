@@ -1,0 +1,24 @@
+{
+  "name": "ui-basics-sass-02-random-patrickthumeyer",
+  "version": "1.0.0",
+  "description": "Let's create some random bars with SASS.",
+  "main": "index.js",
+  "scripts": {
+    "watch-styles": "node-sass -w -r sass -o styles",
+    "build-styles": "node-sass sass -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-ber-fbw21/ui-basics-sass-02-random-patrickthumeyer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dci-ber-fbw21/ui-basics-sass-02-random-patrickthumeyer/issues"
+  },
+  "homepage": "https://github.com/dci-ber-fbw21/ui-basics-sass-02-random-patrickthumeyer#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

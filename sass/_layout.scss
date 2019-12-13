@@ -1,0 +1,48 @@
+body {
+  background-color: #ffeaa4;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: 1fr;
+}
+
+div:nth-child(odd) {
+  align-self: end;
+  //   height: 50px;
+  background-color: red;
+  transform-origin: 0 100%;
+  border-radius: random(80) + px random(80) + px 0 0;
+}
+
+div:nth-child(even) {
+  align-self: start;
+  //   height: 50px;
+  background-color: blue;
+  transform-origin: 0 0;
+  border-radius: 0 0 random(80) + px random(80) + px;
+}
+
+@keyframes randomMovement {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@for $i from 1 through 40 {
+  div:nth-child(#{$i}) {
+    height: random(100) + 10 + vh;
+    animation-name: randomMovement;
+    animation-duration: random(3) + s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @include random-background;
+  }
+}

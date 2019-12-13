@@ -1,0 +1,8 @@
+@mixin random-background($color: 255) {
+  background-color: rgba(
+    random($color),
+    random($color),
+    random($color),
+    random()
+  );
+}
